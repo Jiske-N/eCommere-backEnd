@@ -10,7 +10,7 @@ This project was designed for the manager/s of an e-commerce website to be able 
 
 ## Link & Contents
 
-- [Video Walkthrough]()
+- [Video Walkthrough](https://www.loom.com/share/c0286ddeb408458cabdb0693e59ae576?sid=b1bcf343-ab37-4707-97f5-9371c5f34165)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Future Development](#future-development)
@@ -20,7 +20,7 @@ This project was designed for the manager/s of an e-commerce website to be able 
 
 ## Image
 
-![Image of usage]()
+![Image of usage](./public/assets/images/screenshot.png)
 
 ## Installation
 
@@ -35,7 +35,7 @@ This project was designed for the manager/s of an e-commerce website to be able 
 
 ## Usage
 
-[Video Walkthrough]()
+[Video Walkthrough](https://www.loom.com/share/c0286ddeb408458cabdb0693e59ae576?sid=b1bcf343-ab37-4707-97f5-9371c5f34165)
 
 After completing all installation instructions navigate to the root folder in gitbash or similar and enter "npm start".
 
