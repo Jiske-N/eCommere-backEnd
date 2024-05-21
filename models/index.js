@@ -15,15 +15,31 @@ Category.hasMany(Product, {
   onDelete: "CASCADE",
 });
 
+// this one from chatgpt works properly the commented out one below works but gives duplicate product tag info on get requests. I can't quite work out why though.
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
-  through: { model: ProductTag },
+  through: ProductTag,
+  foreignKey: "product_id",
+  otherKey: "tag_id",
 });
 
+// // Products belongToMany Tags (through ProductTag)
+// Product.belongsToMany(Tag, {
+//   through: { model: ProductTag },
+// });
+
+// this one from chatgpt works properly the commented out one below works but gives duplicate product tag info on get requests. I can't quite work out why though.
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
-  through: { model: ProductTag },
+  through: ProductTag,
+  foreignKey: "tag_id",
+  otherKey: "product_id",
 });
+
+// // Tags belongToMany Products (through ProductTag)
+// Tag.belongsToMany(Product, {
+//   through: { model: ProductTag },
+// });
 
 module.exports = {
   Product,
